@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Reset MOULa Account Password
+    url: https://account.mystonline.com/accounts/index.php?action=reset
+    about: "I forgot my Myst Online: Uru Live account password!"
+  - name: MOULa Account Login Issues (Other)
+    url: https://support.cyan.com/new-ticket
+    about: "I'm having trouble logging in to Myst Online: Uru Live with my account."

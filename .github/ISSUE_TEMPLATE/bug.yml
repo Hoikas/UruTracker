@@ -1,0 +1,69 @@
+name: Bug Report
+description: File a Bug Report
+title: "[bug] "
+labels: "requires:triage"
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: >
+      Please checked the pinned issues and search to see if an
+      issue already exists for the bug you encountered. Pay special
+      attention to the [list of common issues](https://github.com/Hoikas/UruTracker/issues/1).
+    options:
+    - label: I have searched the existing issues.
+      required: true
+- type: dropdown
+  id: shard
+  attributes:
+    label: Shard
+    description: Which shard did you encounter the issue on?
+    options:
+      - Deep Island
+      - Destiny
+      - Gehn Shard
+      - Minkata
+      - Minkata Alpha
+      - "Myst Online: Uru Live (again)"
+      - The Open Cave (MOUL)
+      - The Open Cave (PotS)
+      - (Other)
+  validations:
+    required: true
+- type: input
+  id: client
+  attributes:
+    label: Client
+    # This description kind of sucks. FIXME?
+    description: >
+      If you are using a special client (eg H'uru), please specify it and its version here.
+- type: input
+  id: age
+  attributes:
+    label: Age
+    description: Which Age were you in when the issue occured?
+    placeholder: Teledahn
+  validations:
+    required: true
+- type: textarea
+  id: report
+  attributes:
+    label: What happened?
+    description: >
+      Please explain the problem you experienced and what you expected to happen. Be sure to
+      describe both the issue and your expectation completely and correctly with proper spelling,
+      grammar, usage, and punctuation.
+    placeholder: >
+      When I returned to Relto after changing my clothing in the closet, the camera flew down from
+      the sky through the fissure. The camera was then stuck below the Age, looking at the purple
+      void. I expected for the camera to be looking at my avatar inside of the Relto hut. I had to
+      use my Relto book to fix the problem.
+  validations:
+    required: true
+- type: textarea
+  id: logs
+  attributes:
+    label: Logs
+    description: >
+      If this issue happened on a testing shard, please include the contents of any applicable
+      log files below. If you are uncertain about how to acquire those, leave it blank.
